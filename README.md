@@ -69,6 +69,3 @@ pip install pandas psycopg2 matplotlib sshtunnel
 - Add functionality for dynamic parameter tuning in similarity analysis.
 - Expand to include more visualizations, such as heatmaps for item co-occurrence.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
