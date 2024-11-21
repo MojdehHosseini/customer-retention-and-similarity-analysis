@@ -6,6 +6,9 @@ import os
 
 SSH_KEY = os.environ('SSH_KEY_PINKET')
 SSH_USERNAME =  os.environ('SSH_USERNAME-PINKET')
+DB_USERNAME = os.environ('DB_USERNAME-PINKET')
+DB_PASSWORD =  os.environ('DB_PASSWORD-PINKET')
+
 
 def db_connection():
 
@@ -28,8 +31,8 @@ def db_connection():
         # Create a database connection
         conn = psycopg2.connect(
             database='VShop',
-            user=SSH_USERNAME,
-            password=SSH_KEY,
+            user=DB_USERNAME,
+            password=DB_PASSWORD,
             # host='postgres-replica1.pinket.local',
             # port='5432',
             host='localhost',
